@@ -1,25 +1,13 @@
-/* /* :root{ */
-    /* fonts */
-    /* --main-font: "Roboto", "Raleway"; */
-
-    /* colors */
-    /* --color-iris: #4D5AE5;
-    --color-ocean: #404BBF;
-    --color-blue:#2E2F42;
-    --color-green:#31D0AA;
-    --color-slate:#434455;
-    --color-lightslate:#8E8F99;
-    --color-cornflower:#E7E9FC;
-    --color-cloud:#F4F4FD;
-    --color-navyblue:#2E2F42;
-    --color-grey:#2E2F42;
-    --color-white:#FFFFFF;
-    --color-dairy:#FCFCFC; */
-/* } */ 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 
 body{
-    font-family: "Roboto", "Raleway";
+    font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
+    color: #434455;
 }
 
 header{
@@ -31,9 +19,10 @@ nav{
 }
 
 .logo{
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -42,7 +31,7 @@ nav{
     font-family: "Raleway";
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4D5AE5;
@@ -55,7 +44,9 @@ nav{
     letter-spacing: 0.02em;
 }
 
-.header-list:hover{
+.header-list:hover,
+.header-list:focus
+{
     color:#404BBF;
 }
 
@@ -68,9 +59,10 @@ ul{
     list-style: none;
 }
 
-address{
+.adres{
     list-style: none;
     color:#434455;
+    font-style: normal;
 }
 
 .addreas-list{
@@ -80,7 +72,9 @@ address{
     letter-spacing: 0.02em;
 }
 
-.addreas-list:hover{
+.addreas-list:hover,
+.addreas-list:focus
+{
     color:#404BBF;
 }
 
@@ -90,7 +84,7 @@ address{
     background-color: #2E2F42;
 }
 
-h1{
+.title{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
@@ -99,7 +93,12 @@ h1{
     color: #FFFFFF;
 }
 
-button{
+.buton{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     border-radius: 4px;
     padding: 16px 32px;
     width: 169px;
@@ -109,10 +108,11 @@ button{
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    cursor: pointer;
     background-color: #4D5AE5;
 }
 
-button:hover{
+.buton:hover{
     background-color: #404BBF;
 }
 
@@ -149,7 +149,8 @@ button:hover{
 .persons-logo{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
@@ -160,6 +161,7 @@ button:hover{
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -184,9 +186,10 @@ button:hover{
 .item-logo{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
     color: #2E2F42;
 }
 
@@ -211,16 +214,17 @@ button:hover{
     color: #434455;
 }
 
-footer{
+.foter{
     width: 1440px;
     height: 312px;
     background-color: #2E2F42;
 }
 
 .footer-logo{
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
