@@ -1,13 +1,8 @@
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
-
 body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
+    min-height: 100vh;
 }
 
 header{
@@ -16,6 +11,11 @@ header{
 
 nav{
     color:#2E2F42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .logo{
@@ -25,6 +25,8 @@ nav{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    margin-left: 156px;
 }
 
 .logo-blue{
@@ -35,6 +37,13 @@ nav{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4D5AE5;
+}
+
+.header-li{
+    display: flex;
+    margin-top: 24px;
+    gap: 40px;
+    margin-right: 332px;
 }
 
 .header-list{
@@ -50,6 +59,11 @@ nav{
     color:#404BBF;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -63,6 +77,9 @@ ul{
     list-style: none;
     color:#434455;
     font-style: normal;
+    display: flex;
+    gap: 40px;
+    margin-right: 156px;
 }
 
 .addreas-list{
@@ -78,10 +95,14 @@ ul{
     color:#404BBF;
 }
 
+main{
+    flex-grow: 1;
+}
+
 .big-logo{
-    width: 1440px;
-    height: 600px;
     background-color: #2E2F42;
+    display: flex;
+    justify-content: center;
 }
 
 .title{
@@ -90,6 +111,9 @@ ul{
     line-height: 1.07143;
     letter-spacing: 0.02em;
     text-align: center;
+    display: flex;
+    margin-top: 188px;
+    margin-bottom: 292px;
     color: #FFFFFF;
 }
 
@@ -156,6 +180,12 @@ ul{
     color: #2E2F42;
 }
 
+.people-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .people-box{
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
@@ -181,6 +211,12 @@ ul{
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+}
+
+.item-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .item-logo{
@@ -215,8 +251,6 @@ ul{
 }
 
 .foter{
-    width: 1440px;
-    height: 312px;
     background-color: #2E2F42;
 }
 
