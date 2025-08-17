@@ -1,8 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
-    min-height: 100vh;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 1128px;
+    padding-right: 156px;
+    padding-left: 156px;
+}
+
+.logo-hiden{
+    display: none;
 }
 
 header{
@@ -11,11 +29,6 @@ header{
 
 nav{
     color:#2E2F42;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .logo{
@@ -24,9 +37,7 @@ nav{
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-right: 76px;
-    margin-left: 156px;
+
 }
 
 .logo-blue{
@@ -40,10 +51,7 @@ nav{
 }
 
 .header-li{
-    display: flex;
-    margin-top: 24px;
-    gap: 40px;
-    margin-right: 332px;
+
 }
 
 .header-list{
@@ -60,7 +68,6 @@ nav{
 }
 
 img {
-    display: block;
     max-width: 100%;
 }
 
@@ -77,9 +84,6 @@ ul{
     list-style: none;
     color:#434455;
     font-style: normal;
-    display: flex;
-    gap: 40px;
-    margin-right: 156px;
 }
 
 .addreas-list{
@@ -96,13 +100,14 @@ ul{
 }
 
 main{
-    flex-grow: 1;
+
 }
 
 .big-logo{
     background-color: #2E2F42;
-    display: flex;
-    justify-content: center;
+    
+    height: 600px;
+    margin-bottom: 120px;
 }
 
 .title{
@@ -111,10 +116,9 @@ main{
     line-height: 1.07143;
     letter-spacing: 0.02em;
     text-align: center;
-    display: flex;
-    margin-top: 188px;
-    margin-bottom: 292px;
     color: #FFFFFF;
+
+    padding: 188px 472px 48px 472px;
 }
 
 .buton{
@@ -128,12 +132,16 @@ main{
     width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
     cursor: pointer;
     background-color: #4D5AE5;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 188px;
 }
 
 .buton:hover{
@@ -153,6 +161,7 @@ main{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     display: grid;
     color: #2E2F42;
 }
@@ -168,6 +177,7 @@ main{
 
 .people{
     background-color: #F4F4FD;
+    margin-top: 120px;
 }
 
 .persons-logo{
@@ -178,12 +188,17 @@ main{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .people-list{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    padding-bottom: 120px;
 }
 
 .people-box{
@@ -202,6 +217,9 @@ main{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
+
+    margin-bottom: 8px;
+    padding-top: 32px;
 }
 
 .people-text{
@@ -217,6 +235,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    padding-bottom: 120px;
 }
 
 .item-logo{
@@ -227,6 +247,9 @@ main{
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
+
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .item-box{
@@ -240,6 +263,10 @@ main{
     line-height: 1.2;
     letter-spacing: 0.02em; 
     color: #2E2F42;
+    
+    margin-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .item-text{
@@ -248,10 +275,13 @@ main{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
+    padding-left: 16px;
 }
 
 .foter{
     background-color: #2E2F42;
+    height: 312px;
 }
 
 .footer-logo{
@@ -270,4 +300,10 @@ main{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+
+    margin-top: 16px;
+}
+
+.foter-content{
+    padding: 100px 1020px 100px 156px;
 }
