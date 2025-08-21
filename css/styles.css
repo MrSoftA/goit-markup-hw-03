@@ -27,6 +27,10 @@ header{
     background-color: #FFFFFF;
 }
 
+.logo-flex{
+    display: flex;
+}
+
 nav{
     color:#2E2F42;
 }
@@ -51,7 +55,9 @@ nav{
 }
 
 .header-li{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .header-list{
@@ -84,6 +90,10 @@ ul{
     list-style: none;
     color:#434455;
     font-style: normal;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .addreas-list{
@@ -154,6 +164,21 @@ main{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+}
+
+.character{
+    width: 1128px;
+    height: 104px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 120px 156px 120px 156px;
+    gap: 24px;
+}
+
+.text-container{
+    width: 264px;
+    height: 104px;
 }
 
 .text-box-logo{
