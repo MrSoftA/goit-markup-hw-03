@@ -17,8 +17,9 @@ body{
     display: none;
 }
 
-header{
+.header{
     background-color: #FFFFFF;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .logo-flex{
@@ -28,7 +29,7 @@ header{
     margin-bottom: 24px;
 }
 
-nav{
+.nav{
     color:#2E2F42;
 }
 
@@ -78,6 +79,7 @@ nav{
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 a{
