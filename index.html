@@ -10,12 +10,13 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     
         <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
+        <div class="div_header">
             <nav class="nav">
                 <div class="logo-flex">
                     <a class="logo" href="./index.html">
@@ -41,18 +42,23 @@
                     </address>
                 </div>
         </nav>
+    </div>
     </header>
     
     <main>
         <!-- section 1 -->
-        <section class="big-logo">
+        <section>
+            <div class="container">
+            <div class="big-logo">
                 <h1 class="title">Effective Solutions for Your Business</h1>
                 <button class="buton" type="button"><span class="button-text">Order Service</span></button>
-        </section>
+            </div>
+            </div>
+            </section>
         
         <!-- characteristic -->
          <section>
-            <div>
+            <div class="container">
                 <h2 class="logo-hiden">Characteristic</h2>
                 <ul class="character">
                     <li class="text-container">
@@ -89,7 +95,7 @@
         <!-- Persons -->
         </section>
          <section class="people">
-            <div>
+            <div class="container">
                 <h2 class="persons-logo">Our Team</h2>
                 <ul class="people-list">
                     <li class="people-box">
@@ -117,8 +123,9 @@
          </section>
 
          <!-- Our Portfolio -->
-         <section>
+         <section class="section4">
             <div class="container">
+            <div class="containerr">
                 <h2 class="item-logo">Our Portfolio</h2>
                 <ul class="item-list">
                     <li class="item-box">
@@ -153,7 +160,8 @@
                     </li>
                 </ul>
             </div>
-         </section>
+        </div>
+        </section>
     </main>
 
     <footer class="foter">
