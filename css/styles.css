@@ -8,33 +8,55 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
-    
-    width: 1440px;
-    height: 3300px;
+    max-width: 1440px;
+    margin: 0 auto;
+    /*width: 1440px;
+    height: 3300px;*/
 }
 
-.logo-hiden{
-    display: none;
+img {
+    max-width: 100%;
+    display: block;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*  header  */
 
 .header{
     background-color: #FFFFFF;
     border-bottom: 1px solid #e7e9fc
 }
 
-.container{
-
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-flex{
     display: flex;
-    width: 1440px;
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
 .nav{
     color:#2E2F42;
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -43,6 +65,7 @@ body{
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-right: 76px;
 }
 
 .logo-blue{
@@ -65,7 +88,6 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     gap: 40px;
-    padding-left: 76px;
 }
 
 .header-list{
@@ -73,6 +95,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-list:hover,
@@ -81,34 +104,20 @@ body{
     color:#404BBF;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-ul{
-    list-style: none;
-}
-
 .adres{
     list-style: none;
     color:#434455;
     font-style: normal;
+}
 
+.addreas-list{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 40px;
-    padding-left: 332px;
-    padding-right: 156px;
 }
 
-.addreas-list{
+.addreas-link{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -121,12 +130,17 @@ ul{
     color:#404BBF;
 }
 
+/*  Section 1 - Logo */
 
 .big-logo{
     background-color: #2E2F42;
-    width: 1440px;
-    height: 600px;
-    margin-bottom: 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo-hiden {
+    display: none;
 }
 
 .title{
@@ -211,8 +225,9 @@ ul{
 
 .people{
     background-color: #F4F4FD;
-    width: 1440px;
-    height: 732px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .persons-logo{
