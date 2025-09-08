@@ -1,62 +1,22 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+top*,
+*::before,
+*::after{
+
 }
 
 body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
-    max-width: 1440px;
-    margin: 0 auto;
-    /*width: 1440px;
-    height: 3300px;*/
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/*  header  */
-
-.header{
+/*   Header    */
+header{
     background-color: #FFFFFF;
-    border-bottom: 1px solid #e7e9fc
 }
 
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-flex{
-    display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.nav{
+nav{
     color:#2E2F42;
-    display: flex;
-    align-items: center;
 }
 
 .logo{
@@ -65,7 +25,8 @@ ul {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-right: 76px;
+    text-transform: uppercase;
+    color: #4D5AE5;
 }
 
 .logo-blue{
@@ -75,19 +36,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:#4D5AE5;
-}
-
-.logo
-.logo-blue{
-    padding-left: 156px;
-}
-
-.header-li{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    color:#2e2f42;
 }
 
 .header-list{
@@ -95,13 +44,21 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
 }
 
 .header-list:hover,
 .header-list:focus
 {
     color:#404BBF;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
 }
 
 .adres{
@@ -111,13 +68,6 @@ ul {
 }
 
 .addreas-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
-}
-
-.addreas-link{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -130,28 +80,19 @@ ul {
     color:#404BBF;
 }
 
-/*  Section 1 - Logo */
+/*   Section 1  Logo/button  */
 
 .big-logo{
     background-color: #2E2F42;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.logo-hiden {
-    display: none;
 }
 
 .title{
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-
-    padding: 188px 472px 48px 472px;
 }
 
 .buton{
@@ -160,24 +101,14 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    display: block;
-    align-items: center;
     justify-content: center;
     white-space: nowrap;
     cursor: pointer;
     background-color: #4D5AE5;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 188px;
 }
 
-.buton:hover{
+.buton:hover,
+.buton:focus{
     background-color: #404BBF;
 }
 
@@ -189,28 +120,13 @@ ul {
     color: #FFFFFF;
 }
 
-.character{
-    width: 1128px;
-    height: 104px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin: 120px 156px 120px 156px;
-    gap: 24px;
-}
-
-.text-container{
-    width: 264px;
-    height: 104px;
-}
+/*   Section 2   Characterisitics    */
 
 .text-box-logo{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    display: grid;
     color: #2E2F42;
 }
 
@@ -219,15 +135,13 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: grid;
     color: #434455;
 }
 
+/*   Section 3   People    */
+
 .people{
     background-color: #F4F4FD;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .persons-logo{
@@ -238,25 +152,10 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    
-    padding-top: 120px;
-    padding-bottom: 72px;
-}
-
-.people-list{
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
-    padding-left: 156px;
 }
 
 .people-box{
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 380px;
     background-color: #FFFFFF;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .people-logo{
@@ -266,9 +165,6 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-
-    padding-top: 32px;
-    padding-bottom: 8px;
 }
 
 .people-text{
@@ -280,24 +176,7 @@ ul {
     color: #434455;
 }
 
-.container{
-
-}
-
-.containerr{
-    width: 1128px;
-    height: 1000px;
-    margin: 120px 156px 120px 156px;
-}
-
-/*-- Our Portfolio --*/
-
-.item-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-
-}
+/*   Section 4    Items    */
 
 .item-logo{
     font-weight: 700;
@@ -307,15 +186,9 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-
-    padding-bottom: 72px;
 }
 
 .item-box{
-    width: 360px;
-    height: 420px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .item-title{
@@ -324,10 +197,6 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em; 
     color: #2E2F42;
-    
-    margin-bottom: 8px;
-    padding-top: 32px;
-    padding-left: 16px;
 }
 
 .item-text{
@@ -336,15 +205,12 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
-    padding-left: 16px;
 }
 
-/*-- Footer --*/
+/*   Footer    */
 
 .foter{
     background-color: #2E2F42;
-    height: 312px;
 }
 
 .footer-logo{
@@ -354,10 +220,17 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
-    
-    margin-bottom: 16px;
-    display: inline-block;
+    color: #4d5ae5;
+}
+
+.foter-logo-blue {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
 
 .footer-text{
@@ -366,10 +239,4 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-
-    margin-top: 16px;
-}
-
-.foter-content{
-    padding: 100px 1020px 100px 156px;
 }
