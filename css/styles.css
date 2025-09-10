@@ -258,7 +258,7 @@ img{
 .people-box{
     background-color: #FFFFFF;
 
-    width: calc ( (100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -372,9 +372,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-}
 
-.logo-foter{
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -387,6 +385,9 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text{
