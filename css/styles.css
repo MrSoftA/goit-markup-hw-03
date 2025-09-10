@@ -2,8 +2,10 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
-    max-width: 1440px;
-    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
 }
 
 a {
@@ -38,9 +40,7 @@ img{
 
 .heder-container{
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin: 0 auto;
+    align-items: center;
 }
 
 .navigation{
@@ -84,6 +84,7 @@ img{
     letter-spacing: 0.02em;
 
     padding: 24px 0;
+    display: block;
 }
 
 .header-list:hover,
@@ -101,7 +102,8 @@ img{
 .adres-list{
     display: flex;
     gap: 40px;
-    margin-left: 242px;
+    margin-left: auto;
+    /*margin-left: 242px;*/
 }
 
 .adres-link{
